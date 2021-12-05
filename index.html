@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="standard.css" id="css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="calculate.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--BUTTON-->
+    <div class="left">
+        <button class="standard" onclick="standardcss()"></button>
+        <button class="light" onclick="lightcss()"></button>
+        <button class="darker" onclick="darkercss()"></button>
+    </div>
+
+
+    <!--Calculator-->
+<div class="grid-container">
+    <input type="text" placeholder="Result" class="result item1"/>
+    <div class="item2"><button class="key clear" onclick="deletelast()">DEL</button></div>
+    <div class="item3"><button class="key" onclick="adddata('1')">1</button></div>
+    <div class="item3"><button class="key" onclick="adddata('2')">2</button></div>
+    <div class="item3"><button class="key" onclick="adddata('3')">3</button></div>
+    <div class="item3"><button class="key" onclick="adddata('+')">+</button></div>
+    <div class="item3"><button class="key" onclick="adddata('4')">4</button></div>
+    <div class="item3"><button class="key" onclick="adddata('5')">5</button></div>
+    <div class="item3"><button class="key" onclick="adddata('6')">6</button></div>
+    <div class="item3"><button class="key" onclick="adddata('-')">-</button></div>
+    <div class="item3"><button class="key" onclick="adddata('7')">7</button></div>
+    <div class="item3"><button class="key" onclick="adddata('8')">8</button></div>
+    <div class="item3"><button class="key" onclick="adddata('9')">9</button></div>
+    <div class="item3"><button class="key" onclick="adddata('*')">*</button></div>
+    <div class="item3"><button class="key" onclick="adddata('/')">/</button></div>
+    <div class="item3"><button class="key" onclick="adddata('0')">0</button></div>
+    <div class="item3"><button class="key" onclick="adddata('.')">.</button></div>
+    <div class="item3"><button class="key" onclick="compute()">=</button></div>
+    <button class="item4 clearall" onclick="clearscreen()">Clear All</button>
+</div>
+<a href="https://github.com/ambujraj2001/Calculator-Using-JavaScript" target="_blank"><button class="github"><img src="github.png" class="im">&nbsp;Source Code &nbsp;</button></a>
+    <script src="index.js"></script>
+</body>
+
+</html>

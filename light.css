@@ -1,0 +1,112 @@
+body {
+  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+}
+.darker {
+  background-image: linear-gradient(100deg, #001214, #001f29);
+  color: white;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  outline-style: initial;
+}
+.standard {
+  background-image: linear-gradient(100deg, #575656, #062e3f);
+  color: #ffdfdb;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  outline-style: initial;
+}
+.light {
+  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+  color: #1a150e;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  outline-style: initial;
+}
+.left {
+  float: right;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+
+
+
+/*calculator*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 3px;
+  padding: 5px;
+  text-align: center;
+  width: 30vw;
+  height: auto;
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.grid-container > div {
+  background-color: rgba(38, 235, 241, 0.8);
+  text-align: center;
+  font-size: 10px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+  font-size: x-large;
+}
+
+
+.item3,.item2,.item1{
+  border-radius: 10px;
+}
+
+.item4{
+  border-radius: 10px;
+  font-size: x-large;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: center;
+  background-color: red;
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*keys and input box*/
+.key{
+  font-size: x-large;
+  width:100%;
+  display: block;
+  height: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  border-radius: 10px;
+}
+
+
+
+/*github button*/
+
+.github{
+  position:absolute;
+  bottom: 23px;
+  right: 45px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: x-large;
+  padding: 5px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.im{
+  width: 25px;
+  height: 25px;
+}
